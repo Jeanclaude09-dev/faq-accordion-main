@@ -34,8 +34,10 @@
     <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body>
-    <main class="bg-[#f9f0ff] flex justify-center items-center">
-      <section class="bg-white w-[600px] p-6 rounded-2xl flex-col flex gap-6">
+    <main class="bg-[#f9f0ff] flex justify-center items-center max-sm:p-3">
+      <section
+        class="bg-white w-[600px] p-6 rounded-2xl flex-col flex gap-6 max-sm:p-4"
+      >
         <section class="flex items-center gap-2">
           <img src="assets/images/icon-star.svg" aria-hidden="true" />
           <h1 class="text-5xl font-bold text-[#2f1533]">FAQs</h1>
@@ -43,20 +45,20 @@
         <section class="flex flex-col gap-4">
           <!-- Questions -->
           <article class="faq-item">
-            <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center justify-between max-sm:gap-2.5">
               <h2
-                class="faq-question text-[18px] text-[#2f1533] text-purple font-semibold"
+                class="faq-question text-[18px] text-[#2f1533] text-purple font-semibold max-sm:text-base"
               >
                 What is Frontend Mentor, and how will it help me?
               </h2>
               <button class="button flex">
                 <img
-                  class="w-8 h-8 icon-plus"
+                  class="w-8 h-8 icon-plus max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-plus.svg"
                   aria-hidden="true"
                 />
                 <img
-                  class="w-8 h-8 hidden icon-minus"
+                  class="w-8 h-8 hidden icon-minus max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-minus.svg"
                   aria-hidden="true"
                 />
@@ -72,18 +74,20 @@
             </div>
           </article>
           <article class="faq-item">
-            <div class="flex items-center justify-between mb-2">
-              <h2 class="faq-question text-[18px] text-[#2f1533] font-semibold">
+            <div class="flex items-center justify-between max-sm:gap-2.5">
+              <h2
+                class="faq-question text-[18px] text-[#2f1533] font-semibold max-sm:text-base"
+              >
                 Is Frontend Mentor free?
               </h2>
               <button class="button flex">
                 <img
-                  class="w-8 h-8 icon-plus"
+                  class="w-8 h-8 icon-plus max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-plus.svg"
                   aria-hidden="true"
                 />
                 <img
-                  class="w-8 h-8 icon-minus hidden"
+                  class="w-8 h-8 icon-minus hidden max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-minus.svg"
                   aria-hidden="true"
                 />
@@ -98,18 +102,20 @@
             </div>
           </article>
           <article class="faq-item">
-            <div class="flex items-center justify-between mb-2">
-              <h2 class="faq-question text-[18px] text-[#2f1533] font-semibold">
+            <div class="flex items-center justify-between max-sm:gap-2.5">
+              <h2
+                class="faq-question text-[18px] text-[#2f1533] font-semibold max-sm:text-base"
+              >
                 Can I use Frontend Mentor projects in my portfolio?
               </h2>
               <button class="button flex">
                 <img
-                  class="w-8 h-8 icon-plus"
+                  class="w-8 h-8 icon-plus max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-plus.svg"
                   aria-hidden="true"
                 />
                 <img
-                  class="w-8 h-8 icon-minus hidden"
+                  class="w-8 h-8 icon-minus hidden max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-minus.svg"
                   aria-hidden="true"
                 />
@@ -124,18 +130,20 @@
             </div>
           </article>
           <article class="faq-item">
-            <div class="flex items-center justify-between mb-2">
-              <h2 class="faq-question text-[18px] text-[#2f1533] font-semibold">
+            <div class="flex items-center justify-between max-sm:gap-3">
+              <h2
+                class="faq-question text-[18px] text-[#2f1533] font-semibold max-sm:text-base"
+              >
                 How can I get help if I'm stuck on a Frontend Mentor challenge?
               </h2>
               <button class="button flex">
                 <img
-                  class="w-8 h-8 icon-plus"
+                  class="w-8 h-8 icon-plus max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-plus.svg"
                   aria-hidden="true"
                 />
                 <img
-                  class="w-8 h-8 icon-minus hidden"
+                  class="w-8 h-8 icon-minus hidden max-sm:w-5 max-sm:h-5"
                   src="assets/images/icon-minus.svg"
                   aria-hidden="true"
                 />
@@ -152,11 +160,12 @@
         </section>
       </section>
     </main>
-    <footer class="attribution bg-purple-100">
+    <footer class="attribution bg-[#f9f0ff] text-purple-500">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://github.com/Jeanclaude09-dev">Jeanclaude09-dev</a>.
     </footer>
     <script src="script.js"></script>
   </body>

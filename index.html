@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "purple-100": "#f9f0ff",
+              "purple-600": "#8c6991",
+              "purple-950": "#2f1533",
+            },
+            fontFamily: {
+              display: ["WorkSans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+  <body>
+    <main class="bg-[#f9f0ff] flex justify-center items-center">
+      <section class="bg-white w-[600px] p-6 rounded-2xl flex-col flex gap-6">
+        <section class="flex items-center gap-2">
+          <img src="assets/images/icon-star.svg" aria-hidden="true" />
+          <h1 class="text-5xl font-bold text-[#2f1533]">FAQs</h1>
+        </section>
+        <section class="flex flex-col gap-4">
+          <!-- Questions -->
+          <article class="faq-item">
+            <div class="flex items-center justify-between mb-2">
+              <h2
+                class="faq-question text-[18px] text-[#2f1533] text-purple font-semibold"
+              >
+                What is Frontend Mentor, and how will it help me?
+              </h2>
+              <button class="button flex">
+                <img
+                  class="w-8 h-8 icon-plus"
+                  src="assets/images/icon-plus.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  class="w-8 h-8 hidden icon-minus"
+                  src="assets/images/icon-minus.svg"
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <div class="answer">
+              <p class="text-[#8c6991]">
+                Frontend Mentor offers realistic coding challenges to help
+                developers improve their frontend coding skills with projects in
+                HTML, CSS, and JavaScript. It's suitable for all levels and
+                ideal for portfolio building.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <div class="flex items-center justify-between mb-2">
+              <h2 class="faq-question text-[18px] text-[#2f1533] font-semibold">
+                Is Frontend Mentor free?
+              </h2>
+              <button class="button flex">
+                <img
+                  class="w-8 h-8 icon-plus"
+                  src="assets/images/icon-plus.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  class="w-8 h-8 icon-minus hidden"
+                  src="assets/images/icon-minus.svg"
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <div class="answer">
+              <p class="text-[#8c6991]">
+                Yes, Frontend Mentor offers both free and premium coding
+                challenges, with the free option providing access to a range of
+                projects suitable for all skill levels.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <div class="flex items-center justify-between mb-2">
+              <h2 class="faq-question text-[18px] text-[#2f1533] font-semibold">
+                Can I use Frontend Mentor projects in my portfolio?
+              </h2>
+              <button class="button flex">
+                <img
+                  class="w-8 h-8 icon-plus"
+                  src="assets/images/icon-plus.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  class="w-8 h-8 icon-minus hidden"
+                  src="assets/images/icon-minus.svg"
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <div class="answer">
+              <p class="text-[#8c6991]">
+                Yes, you can use projects completed on Frontend Mentor in your
+                portfolio. It's an excellent way to showcase your skills to
+                potential employers!
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <div class="flex items-center justify-between mb-2">
+              <h2 class="faq-question text-[18px] text-[#2f1533] font-semibold">
+                How can I get help if I'm stuck on a Frontend Mentor challenge?
+              </h2>
+              <button class="button flex">
+                <img
+                  class="w-8 h-8 icon-plus"
+                  src="assets/images/icon-plus.svg"
+                  aria-hidden="true"
+                />
+                <img
+                  class="w-8 h-8 icon-minus hidden"
+                  src="assets/images/icon-minus.svg"
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <div class="answer">
+              <p class="text-[#8c6991]">
+                The best place to get help is inside Frontend Mentor's Discord
+                community. There's a help channel where you can ask questions
+                and seek support from other community members.
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+    <footer class="attribution bg-purple-100">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

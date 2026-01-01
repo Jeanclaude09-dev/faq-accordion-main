@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Purple-100: #f9f0ff;
+  --Purple-600: #8c6991;
+  --Purple-950: #2f1533;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+main {
+  background: url(assets/images/background-pattern-desktop.svg) no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 428px) {
+  main {
+    background: url(assets/images/background-pattern-mobile.svg) no-repeat top
+      cover;
+  }
+}
